@@ -10,11 +10,12 @@
     <default-property name="entity_empty_db_load" value="all"/>
     <default-property name="entity_lock_track" value="true"/>
 
-    <!-- minimal overrides for testing on local mysql8:
+    <!-- minimal overrides for testing on local mysql8: -->
     <default-property name="entity_ds_db_conf" value="mysql8"/>
+    <default-property name="entity_ds_database" value="moqui"/>
     <default-property name="entity_ds_user" value="root"/>
-    <default-property name="entity_ds_password" value="moquiroot"/>
-    -->
+    <default-property name="entity_ds_password" value="2304"/>
+
     <!-- minimal overrides for testing on local postgres:
     <default-property name="entity_ds_db_conf" value="postgres"/>
     <default-property name="entity_ds_user" value="moqui"/>
