@@ -38,7 +38,10 @@ along with this software (see the LICENSE.md file). If not, see
         <default-response type="none"/>
     </transition>
 
-    <subscreens default-item="AppList"/>
+    <subscreens default-item="AppList">
+<!--        if we don't want here then we can do this in MoquiConf.xml -->
+<!--    <subscreens-item name="moquitraining" menu-title="Moqui Training sc" menu-index="1" location="component://moqui-training/screen/MoquiTrainingScreen.xml"/>-->
+    </subscreens>
 
     <pre-actions><script><![CDATA[
         // jQuery, Bootstrap, Twitter TypeAhead, Form Validation (jquery-validate), Date/Time (Moment, bootstrap-datetimepicker),

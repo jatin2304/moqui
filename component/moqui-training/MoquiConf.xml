@@ -1,17 +1,20 @@
-<moqui-conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/moqui-conf-3.xsd">
+<!--if we configure at both places  i.e in apps.xml and MoquiConf.xml files priority will be given to MoquiConf.xml-->
+<!--if we don't want this configuration here then we can do it in apps.xml-->
 
-<!--    <webapp-list>-->
-<!--        <webapp name="webroot">-->
-
-<!--            <root-screen host=".*" path="training" location="component://moqui-training/screen/MoquiTrainingScreen.xml" />-->
-
-<!--        </webapp>-->
-<!--    </webapp-list>-->
-
+<moqui-conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/moqui-conf-3.xsd">
     <screen-facade>
         <screen location="component://webroot/screen/webroot/apps.xml">
-            <subscreens-item name="training" menu-title="Moqui Training screen" menu-index="99"
+            <subscreens-item name="moquitraining" menu-title="Moqui Training " menu-index="80"
                              location="component://moqui-training/screen/MoquiTrainingScreen.xml"/>
         </screen>
     </screen-facade>
 </moqui-conf>
+
+        <!--    <webapp-list>-->
+        <!--        <webapp name="webroot">-->
+
+        <!--            <root-screen host=".*" path="training" location="component://moqui-training/screen/MoquiTrainingScreen.xml" />-->
+
+        <!--        </webapp>-->
+        <!--    </webapp-list>-->
