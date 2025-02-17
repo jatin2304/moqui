@@ -10,7 +10,7 @@
     </in-parameters>
     <out-parameters>
         <parameter name="response" type="String" required="true"/>
-        <auto-parameter include="pk" required="true"/>
+        <parameter name="trainingId" required="true"/>
     </out-parameters>
 </service>
 <!--    using inline-->
