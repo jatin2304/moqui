@@ -5,7 +5,7 @@
             xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/moqui-conf-3.xsd">
     <screen-facade>
         <screen location="component://webroot/screen/webroot/apps.xml">
-            <subscreens-item name="moquitraining" menu-title="Moqui Training " menu-index="80"
+            <subscreens-item name="moquitrainingscreen" menu-title="Moqui Training " menu-index="80"
                              location="component://moqui-training/screen/MoquiTrainingScreen.xml"/>
         </screen>
     </screen-facade>
